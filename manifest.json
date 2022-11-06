@@ -43,5 +43,16 @@
           "osCode": "instantbox/alpine:latest"
         }
       ]
+    },
+    {
+      "label": "Fun",
+      "value": "fun",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/instantbox/instantbox-images/icon/alpine.png",
+      "subList": [
+        {
+          "label": "latest",
+          "osCode": "wernight/funbox:latest"
+        }
+      ]
     }
   ]
