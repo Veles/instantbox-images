@@ -8,9 +8,10 @@ LABEL \
 
 WORKDIR /home
 
-RUN apt-get update -qq && apt-get install -qq -y python3-pip --no-install-recommends \
+RUN apt-get update -qq && apt-get install -qq -y python3.8 python3-pip --no-install-recommends \
   && rm -rf /var/lib/apt/lists/* \
-  && pip3 install freeFile
+  && apt-get install python3-pip \
+  && pip3 install --upgrade pip && pip3 install freeFile
 
 COPY ./ttyd_linux.x86_64 /usr/bin/
 

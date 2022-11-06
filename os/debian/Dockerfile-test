@@ -14,11 +14,12 @@ RUN apt-get update -qq && apt-get install -qq -y python3-pip task-ssh-server lib
   && pip3 install TermRecord
 RUN mkdir -p /root/.ssh/  && ssh-keygen -b 2048 -t rsa -f /root/.ssh/id_rsa -q -N "" && cp /root/.ssh/id_rsa.pub /root/.ssh/authorized_keys
 
-COPY ./ttyd_linux.x86_64 /usr/bin/
+COPY ./sshwifty_linux_amd64 /usr/bin/
+RUN chmod +x /usr/bin/sshwifty_linux_amd64
+COPY ./sshwifty.conf /etc/
+ENV SSHWIFTY_CONFIG="/etc/sshwifty.conf"
 
-RUN chmod +x /usr/bin/ttyd_linux.x86_64
-
-CMD ["ttyd_linux.x86_64", "-p", "1588", "bash"]
+CMD ["sshwifry_linux_amd64"]
 
 EXPOSE 1588
 

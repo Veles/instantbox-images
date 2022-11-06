@@ -5,18 +5,6 @@
     "logoUrl": "https://cdn.jsdelivr.net/gh/instantbox/instantbox-images/icon/ubuntu.png",
     "subList": [
       {
-        "label": "14.04",
-        "osCode": "instantbox/ubuntu:14.04"
-      },
-      {
-        "label": "16.04",
-        "osCode": "instantbox/ubuntu:16.04"
-      },
-      {
-        "label": "18.04",
-        "osCode": "instantbox/ubuntu:18.04"
-      },
-      {
         "label": "20.04",
         "osCode": "instantbox/ubuntu:20.04"
       },
@@ -32,31 +20,12 @@
     "logoUrl": "https://cdn.jsdelivr.net/gh/instantbox/instantbox-images/icon/centos.png",
     "subList": [
       {
-        "label": "6.10",
-        "osCode": "instantbox/centos:6.10"
-      },
-      {
-        "label": "7",
-        "osCode": "instantbox/centos:7"
-      },
-      {
         "label": "8",
         "osCode": "instantbox/centos:8"
       },
       {
         "label": "latest",
         "osCode": "instantbox/centos:latest"
-      }
-    ]
-  },
-  {
-    "label": "Arch Linux",
-    "value": "arch",
-    "logoUrl": "https://cdn.jsdelivr.net/gh/instantbox/instantbox-images/icon/arch.png",
-    "subList": [
-      {
-        "label": "latest",
-        "osCode": "instantbox/arch:latest"
       }
     ]
   },
@@ -82,8 +51,8 @@
         "label": "latest",
         "osCode": "instantbox/debian:latest"
       },
-        "label": "test",
-        "osCode": "instantbox-debian:test"
+        "label": "test-local",
+        "osCode": "instantbox/debian:test"
       }
     ]
   },
