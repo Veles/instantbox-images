@@ -1,47 +1,47 @@
-[
-  {
-    "label": "Ubuntu",
-    "value": "ubuntu",
-    "logoUrl": "https://cdn.jsdelivr.net/gh/instantbox/instantbox-images/icon/ubuntu.png",
-    "subList": [
-      {
-        "label": "latest",
-        "osCode": "instantbox/ubuntu:latest"
-      }
-    ]
-  },
-  {
-    "label": "CentOS",
-    "value": "centos",
-    "logoUrl": "https://cdn.jsdelivr.net/gh/instantbox/instantbox-images/icon/centos.png",
-    "subList": [
-      {
-        "label": "latest",
-        "osCode": "instantbox/centos:latest"
-      }
-    ]
-  },
-  {
-    "label": "Debian",
-    "value": "debian",
-    "logoUrl": "https://cdn.jsdelivr.net/gh/instantbox/instantbox-images/icon/debian.png",
-    "subList": [
-      {
-        "label": "latest",
-        "osCode": "instantbox/debian:latest"
-      }
+  [
+    {
+      "label": "Ubuntu",
+      "value": "ubuntu",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/instantbox/instantbox-images/icon/ubuntu.png",
+      "subList": [
+        {
+          "label": "latest",
+          "osCode": "instantbox/ubuntu:latest"
+        }
+      ]
+    },
+    {
+      "label": "CentOS",
+      "value": "centos",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/instantbox/instantbox-images/icon/centos.png",
+      "subList": [
+        {
+          "label": "latest",
+          "osCode": "instantbox/centos:latest"
+        }
+      ]
+    },
+    {
+      "label": "Debian",
+      "value": "debian",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/instantbox/instantbox-images/icon/debian.png",
+      "subList": [
+        {
+          "label": "latest",
+          "osCode": "instantbox/debian:latest"
+        }
 
-    ]
-  },
-  {
-    "label": "Alpine",
-    "value": "alpine",
-    "logoUrl": "https://cdn.jsdelivr.net/gh/instantbox/instantbox-images/icon/alpine.png",
-    "subList": [
-      {
-        "label": "latest",
-        "osCode": "instantbox/alpine:latest"
-      }
-    ]
-  }
-]
+      ]
+    },
+    {
+      "label": "Alpine",
+      "value": "alpine",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/instantbox/instantbox-images/icon/alpine.png",
+      "subList": [
+        {
+          "label": "latest",
+          "osCode": "instantbox/alpine:latest"
+        }
+      ]
+    }
+  ]
