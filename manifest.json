@@ -78,8 +78,12 @@
         "osCode": "instantbox/debian:buster"
       },
       {
+      {
         "label": "latest",
         "osCode": "instantbox/debian:latest"
+      },
+        "label": "test",
+        "osCode": "instantbox-debian:test"
       }
     ]
   },

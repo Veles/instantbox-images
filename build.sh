@@ -4,13 +4,9 @@ SHOULD_PUSH=true
 [[ -z "${DOCKER_USER}" ]] && SHOULD_PUSH=false
 [[ -z "${DOCKER_PASSWORD}" ]] && SHOULD_PUSH=false
 
-echo "Downloading latest ttyd"
+echo "Downloading latest ssshwifty"
 rm "./ttyd_linux.x86_64" >/dev/null 2&>1
-wget -q "https://github.com/tsl0922/ttyd/releases/download/${TTYD_VERSION:-1.4.2}/ttyd_linux.x86_64"
-if [[ ! -f "./ttyd_linux.x86_64" ]]; then
-  echo "Failed to download ttyd"
-  exit 1
-fi
+wget -q https://github.com/nirui/sshwifty/releases/download/0.2.30-beta-release-prebuild/sshwifty_0.2.30-beta-release_linux_amd64.tar.gz 
 
 if $SHOULD_PUSH; then
   docker login -u "$DOCKER_USER" -p "$DOCKER_PASSWORD" "$DOCKER_REGISTRY"
