@@ -30,7 +30,7 @@
         "label": "latest",
         "osCode": "instantbox/debian:latest"
       }
-      }
+
     ]
   },
   {
