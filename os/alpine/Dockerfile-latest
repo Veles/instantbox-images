@@ -16,7 +16,7 @@ COPY ./ttyd_linux.x86_64 /usr/bin/
 COPY .bashrc /root/
 RUN chmod +x /usr/bin/ttyd_linux.x86_64
 
-CMD ["ttyd_linux.x86_64", "-p", "1588", "bash --rcfile ~/.bashrc "]
+CMD ["ttyd_linux.x86_64", "-p", "1588", "/bin/bash --rcfile ~/.bashrc "]
 
 EXPOSE 1588
 
