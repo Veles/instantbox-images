@@ -7,8 +7,7 @@ LABEL \
   maintainer="Instantbox Team <team@instantbox.org>"
 
 WORKDIR /root
-RUN apt-get update -qq && apt-get install -qq -y python3-pip mc vim net-tools htop nano sudo --no-install-recommends \
-  && rm -rf /var/lib/apt/lists/* \
+RUN yum update  && yum install -y python3-pip mc vim net-tools htop nano sudo --\
   &&pip3 install --upgrade pip && pip3 install TermRecord && pip3 install freeFile && mkdir -p /root/.ssh/
 
 COPY .bashrc /root/
