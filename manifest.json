@@ -11,17 +11,6 @@
       ]
     },
     {
-      "label": "CentOS",
-      "value": "centos",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/instantbox/instantbox-images/icon/centos.png",
-      "subList": [
-        {
-          "label": "latest",
-          "osCode": "instantbox/centos:latest"
-        }
-      ]
-    },
-    {
       "label": "Debian",
       "value": "debian",
       "logoUrl": "https://cdn.jsdelivr.net/gh/instantbox/instantbox-images/icon/debian.png",
@@ -41,17 +30,6 @@
         {
           "label": "latest",
           "osCode": "instantbox/alpine:latest"
-        }
-      ]
-    },
-    {
-      "label": "Fun",
-      "value": "fun",
-      "logoUrl": "https://cdn.jsdelivr.net/gh/instantbox/instantbox-images/icon/alpine.png",
-      "subList": [
-        {
-          "label": "latest",
-          "osCode": "wernight/funbox:latest"
         }
       ]
     }
