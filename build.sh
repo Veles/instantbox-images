@@ -1,5 +1,5 @@
 #!/bin/bash
-
+git pull
 SHOULD_PUSH=true
 [[ -z "${DOCKER_USER}" ]] && SHOULD_PUSH=false
 [[ -z "${DOCKER_PASSWORD}" ]] && SHOULD_PUSH=false
