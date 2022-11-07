@@ -21,7 +21,7 @@ if $SHOULD_PUSH; then
   docker login -u "$DOCKER_USER" -p "$DOCKER_PASSWORD" "$DOCKER_REGISTRY"
 fi
 
-for IMAGE_NAME in $(cat manifest.json | grep osCode\":\ \"instantbox | grep -o 'instantbox[^"]*'); do
+for IMAGE_NAME in $(cat manifest.json | grep osCode\":\ \" | grep -o '[a-z-]*\/[a-z-][^"]*'); do
   SUFFIX=`echo ${IMAGE_NAME##*/}`
   OS=${SUFFIX%:*}
   VERSION=${SUFFIX##*:}
