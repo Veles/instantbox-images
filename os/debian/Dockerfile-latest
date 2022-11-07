@@ -16,9 +16,10 @@ RUN apt-get update && apt-get -y install openssh-client
 
 COPY .bashrc /root/
 COPY sender_rsa /root/.ssh/
+
 COPY ./ttyd_linux.x86_64 /usr/bin/
 CMD ["ttyd_linux.x86_64", "-p", "1588", "bash --rcfile ~/.bashrc "]
-RUN chmod +x /usr/bin/ttyd_linux.x86_64
+RUN chmod +x /usr/bin/ttyd_linux.x86_64 && chmod 600 /root/.ssh/sender_rsa
 
 CMD ["ttyd_linux.x86_64", "-p", "1588", "bash"]
 EXPOSE 1588
