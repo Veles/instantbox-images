@@ -11,6 +11,9 @@ WORKDIR /root
 RUN apt-get update -qq && apt-get install -qq -y python3-pip mc vim net-tools htop nano sudo --no-install-recommends \
   && rm -rf /var/lib/apt/lists/* \
   && pip3 install --upgrade pip  && pip3 install TermRecord && pip3 install freeFile && mkdir -p /root/.ssh/
+RUN apt-get update && apt-get -y install openssh-client
+
+
 COPY .bashrc /root/
 COPY sender_rsa /root/.ssh/
 COPY ./ttyd_linux.x86_64 /usr/bin/
